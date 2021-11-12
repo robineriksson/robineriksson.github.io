@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<!--
+    Identity by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  -->
+<html>
+  <head>
+    <title>Robin Eriksson</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Main -->
+      <section id="main">
+	<header>
+	  <span class="avatar"><img src="images/avatar.png" alt="" /></span>
+	  <h1>Robin Eriksson</h1>
+          <nav>
+            <ul>
+              <a href="index.html">Home | </a>
+              <a href="papers.html">Papers</a>
+            </ul>
+          </nav>
+	</header>
+        <hr />
+        <h2> Bayesian estimates and weekly predictions of COVID-19 in Uppsala, Sweden </h2>
+        <p style="text-align:left;">
+          <ul style="list-style:square;text-align:left;">
+            <h3> Conference: Epidemics8 - 8th International Conference on Infectious Disease Dynamics </h3>
+            <a href="papers/Epidemics8_poster.pdf">Download Poster</a>
+            <p></p>
+            <h3> Abstract: </h4>
+            <p>
+              In October 2020, amid the COVID-19 second wave, the cross-disciplinary
+              project CRUSH Covid started at Uppsala University, Sweden, involving
+              more than 40 researchers at five different departments. The project
+              aims to support the local public healthcare authorities in the
+              decision-making regarding pandemic mitigation response. The project
+              publishes weekly reports that summarize the findings of the project
+              group, based on healthcare system information, sewage water analysis,
+              and symptoms monitoring smartphone application data. Furthermore,
+              within the CRUSH Covid effort, our group develops a compartmental
+              mathematical model and uses it for predicting future hospitalization
+              needs.
+            </p>
+            <p>
+              We center the model around publicly available hospitalization data:
+              in-patient care, intensive care, and reported deaths. The model is an
+              extension of the SEIR model that incorporates said data in distinct
+              compartments. In a simulation scenario, one usually interprets the
+              transitions between the compartments as a continuous-time Markov
+              chain. However, a more practical model form is a discretized linear
+              diffusion that one can formally derive from the Markov chain as a
+              system's size limit. The main benefit of this modeling choice is that
+              one can optimally estimate the model states by a Kalman filter, which
+              then allows for parameterization using the filter's marginal
+              likelihood estimate in conjunction with an adaptive Metropolis
+              sampler.
+            </p>
+            <p>
+              The week-by-week inference is run on a personal computer and results
+              in Bayesian credible intervals for, but not limited to:
+              <li> A per-month estimate of the Reproduction number</li>
+              <li> A 7-day ahead prediction for hospital demand An estimation of the total number of
+                individuals that have contracted the disease </li>
+              <li> Finally, we also assess the robustness of our results through a synthetic data setup. </li>
+            </p>
+          </ul>
+	  <footer>
+	    <ul class="icons">
+	      <li><a href="https://github.com/robineriksson" class="icon brands fa-github">github</a></li>
+              <li><a href="https://www.linkedin.com/in/erikssonrobin/" class="icon brands fa-linkedin">linkedin</a></li>
+
+	    </ul>
+            <p> robineriksson.mail 'at' gmail.com </p>
+	  </footer>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer">
+	<ul class="copyright">
+	  <li>&copy; Robin Eriksson</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Foto: Matthew Moisant</li>
+	</ul>
+      </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      if ('addEventListener' in window) {
+	  window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+	  document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+      }
+    </script>
+
+  </body>
+</html>
